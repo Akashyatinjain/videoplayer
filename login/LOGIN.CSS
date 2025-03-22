@@ -25,10 +25,6 @@ body {
     backdrop-filter: blur(10px); /* Blur effect */
     animation: fadeIn 1s ease-in-out; /* Fade-in animation */
 }
-#loginLink{
-    text-decoration: none;
-    
-}
 
 @keyframes fadeIn {
     from {
@@ -43,6 +39,7 @@ body {
 
 /* Inner Box */
 #innerbox {
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,19 +109,108 @@ body {
     margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Forgot Password */
+#w {
+    height: 22.4px;
+    width: 166.54px;
+    margin: 16px 0px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#w:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sign Up Section */
+.y {
+    font-size: 14px;
+}
+
+#q {
+    position: relative;
+    color: rgb(9, 1, 1);
+}
+
+#e {
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#e:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Additional Styles */
+#hii {
+    position: relative;
+    left: 0px;
+    display: block;
+}
+
+#text, #hello {
+    text-decoration: none;
+}
+
+/* Responsive Design for Tablets (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
     #outerbox {
-        width: 90%;
-        padding: 20px;
+        width: 70%; /* Slightly smaller width for tablets */
+        padding: 25px;
+    }
+
+    #innerbox {
+        height: auto; /* Adjust height for smaller screens */
     }
 
     #box {
-        height: 35px;
+        height: 35px; /* Smaller input boxes */
     }
 
     #loginbut {
-        height: 40px;
+        height: 40px; /* Smaller login button */
         font-size: 14px;
+    }
+
+    #w, .y, #e {
+        font-size: 13px; /* Smaller font size for text */
+    }
+}
+
+/* Responsive Design for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    #outerbox {
+        width: 90%; /* Full width for mobile devices */
+        padding: 20px;
+    }
+
+    #innerbox {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    #box {
+        height: 30px; /* Smaller input boxes */
+        font-size: 12px; /* Smaller font size for input text */
+    }
+
+    #loginbut {
+        height: 35px; /* Smaller login button */
+        font-size: 12px;
+    }
+
+    #w, .y, #e {
+        font-size: 12px; /* Smaller font size for text */
+    }
+
+    #a, #pass {
+        font-size: 14px; /* Smaller font size for labels */
+    }
+
+    #hii {
+        left: 0; /* Reset positioning */
     }
 }
